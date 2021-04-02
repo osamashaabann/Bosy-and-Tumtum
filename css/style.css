@@ -42,6 +42,12 @@ html{
     }
 }
 
+@media only screen and (max-width: 25em /*400px => 400px/16px*/) {
+    html{
+        font-size: 40.5%;
+    }
+}
+
 
 
 
@@ -183,9 +189,41 @@ body{
 
     .form-input{
         margin-bottom: 2rem;
-        width: 100%;
+        width: 60vw;
     }
 }
+
+
+@media only screen and (max-width: 31.25em /*500px => 500px/16px*/) {
+
+    .heading-secondary{
+        font-size: 3.2rem;
+    }
+
+    .form-input{
+        margin-bottom: 2rem;
+        width: 60vw;
+    }
+
+}
+
+@media only screen and (max-width: 20.3125em /*325px => 325px/16px*/) {
+
+    .heading-primary{
+        font-size: 5rem;
+    }
+
+    .heading-secondary{
+        font-size: 3rem;
+    }
+
+    .form-input{
+        margin-bottom: 2rem;
+        width: 60vw;
+    }
+
+}
+
 
 /* SOCIAL ICON */
 .social-box{
