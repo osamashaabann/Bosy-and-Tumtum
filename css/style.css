@@ -1,0 +1,238 @@
+:root{
+    --color-primary:#913e96;
+    --color-secondary:#df85b9;
+
+    --arabic-font: Jomhuria;
+}
+
+@font-face {
+    font-family: gothic-font;
+    src: url(fonts/GOTHIC.TTF);
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit; 
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%; /*10px/16px = 62.5% => 1rem = 10px*/
+    
+}
+
+@media only screen and (max-width: 75em /*1200px => 1200px/16px*/) {
+    html{
+        font-size: 58.5%;
+    }
+}
+
+@media only screen and (max-width: 56.25em /*900px => 900px/16px*/) {
+    html{
+        font-size: 54.5%;
+    }
+}
+
+@media only screen and (max-width: 43.75em /*700px => 700px/16px*/) {
+    html{
+        font-size: 49.5%;
+    }
+}
+
+
+
+
+
+
+body{
+    font-family: gothic-font, sans-serif;
+    background-color: var(--color-primary);
+    background-image: radial-gradient(circle ,var(--color-secondary) 0%, var(--color-primary) 100%);
+}
+
+.container{
+    height: auto;
+    min-height: 100vh;
+    width: 100%;
+    margin: auto;
+    background-image: url("data:image/svg+xml,%3Csvg width='105' height='105' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23000000' fill-opacity='0.03' fill-rule='evenodd'%3E%3Ccircle cx='3' cy='3' r='3'/%3E%3Ccircle cx='13' cy='13' r='3'/%3E%3C/g%3E%3C/svg%3E");
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.logo{
+    height: 21rem;
+}
+
+/* TEXT */
+
+.text-box{
+    margin: 4rem auto 1.4rem auto;
+}
+
+.heading-primary{
+    color: #fff;
+    text-align: center;
+    font-size: 6.6rem;
+    font-weight: bolder;
+    line-height: 1.2;
+    letter-spacing: 0.2rem;
+    text-shadow: 0rem 1rem 2rem rgba(0, 0, 0, 0.4);
+
+
+}
+
+/* FORM */
+
+.form-box{
+    text-align: center;
+    margin: 0rem auto;
+    width: 40vw;
+    margin-bottom: 4rem;
+}
+
+.heading-secondary{
+    color: #fff;
+    font-size: 4.1rem;
+    font-family: 'Cairo', sans-serif;
+    text-shadow: 0rem 1rem 2rem rgba(0, 0, 0, 0.4);
+}
+
+.form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-input{
+    flex: 1;
+    font-size: 1.7rem;
+    background-color: #fff;
+    color: #333;
+    padding: 1.5rem 2rem;
+    border: none;
+    border-radius: 10rem;
+    margin-right: 1rem;
+    outline: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-shadow: 0rem 1rem 2.5rem rgba(0, 0, 0, 0.2);
+
+}
+.form-input::placeholder{
+    color: #888;
+}
+
+.form-btn{
+    background-image: linear-gradient(to right, var(--color-primary), #c05493);
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 1.5rem 2rem;
+    display: inline-block;
+    border-radius: 10rem;
+    transition: all 0.2s;
+    position: relative;
+    font-size: 1.6rem;
+    border: none;
+    cursor: pointer;
+    font-weight: 300;
+    box-shadow: 0rem 1rem 2.5rem rgba(0, 0, 0, 0.09);
+
+}
+
+.form-btn:hover{
+    transform: translateY(-0.3rem);
+    box-shadow: 0rem 1rem 2.5rem rgba(0, 0, 0, 0.2);
+}
+
+.form-btn:active{
+    transform: translateY(-0.1rem);
+    box-shadow: 0rem .5rem 1.2rem rgba(0,0,0, 0.2);
+    outline: none;
+}
+.animated {
+    animation: moveInUp 0.4s ease-out 0.50s;
+    animation-fill-mode: backwards;
+}
+
+@media only screen and (max-width: 56.25em /*900px => 900px/16px*/) {
+
+    .form{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .form-input{
+        margin-bottom: 2rem;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 43.75em /*700px => 700px/16px*/) {
+
+    .heading-secondary{
+        font-size: 3.9rem;
+    }
+
+    .form-input{
+        margin-bottom: 2rem;
+        width: 100%;
+    }
+}
+
+/* SOCIAL ICON */
+.social-box{
+    width: 10vw;
+}
+
+.social-list{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+
+.social-item{
+    margin: auto 0.3rem;
+}
+
+.social-link{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    text-decoration: none;
+    background-color: #fff;
+    color: #c05493;
+    margin: 0 0.5rem;
+    width: 5.2rem;
+    height: 5.2rem;
+    border-radius: 50%;
+    text-align: center;
+    transition: all 0.2s ease;
+}
+
+.social-link:hover{
+    transform: scale(1.1);
+    box-shadow: 0rem .5rem 1.2rem rgba(0,0,0, 0.2);
+
+}
+/* FOOTER */
+
+.footer{
+    margin-top: 7.5rem;
+    font-size: 1.8rem;
+    color: #fff;
+    font-weight: 100;
+    text-shadow: 0rem 1rem 2.5rem rgba(0, 0, 0, 0.3);
+
+    
+}
