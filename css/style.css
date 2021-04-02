@@ -71,8 +71,11 @@ body{
     flex-direction: column;
 }
 
+/* LOGO */
 .logo{
-    height: 21rem;
+    height: 22rem;
+    filter: drop-shadow(black 0px 1px 1px);
+    animation: animate 1s ease;
 }
 
 /* TEXT */
@@ -226,11 +229,7 @@ body{
         width: 60vw;
     }
 
-    
-
 }
-
-
 /* SOCIAL ICON */
 .social-box{
     width: 10vw;
@@ -270,12 +269,24 @@ body{
     box-shadow: 0rem .5rem 1.2rem rgba(0,0,0, 0.2);
 
 }
-/* FOOTER */
 
+/* FOOTER */
 .footer{
-    margin: 1.6rem auto;
+    margin: 0.6rem auto;
     font-size: 2rem;
     color: #fff;
     font-weight: 100;
     text-shadow: 0rem 1rem 2.5rem rgba(0, 0, 0, 0.3);
+}
+
+@keyframes animate {
+    from {
+    transform: translateY(-20%);
+    opacity: 0;
+    }
+
+    to {
+    transform: translateY(0%);
+    opacity: 1;
+    }
 }
