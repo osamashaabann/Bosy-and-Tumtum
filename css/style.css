@@ -273,7 +273,7 @@ body{
 
 /* FOOTER */
 .footer{
-    margin: 0.3rem auto;
+    margin: 0 auto;
     font-size: 2rem;
     color: #fff;
     font-weight: 100;
