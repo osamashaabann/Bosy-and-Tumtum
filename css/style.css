@@ -226,6 +226,8 @@ body{
         width: 60vw;
     }
 
+    
+
 }
 
 
@@ -242,7 +244,7 @@ body{
 }
 
 .social-item{
-    margin: auto 0.3rem;
+    margin: 0 0.3rem;
 }
 
 .social-link{
@@ -271,11 +273,9 @@ body{
 /* FOOTER */
 
 .footer{
-    margin:0.8rem auto;
+    margin: 1.6rem auto;
     font-size: 2rem;
     color: #fff;
     font-weight: 100;
     text-shadow: 0rem 1rem 2.5rem rgba(0, 0, 0, 0.3);
-
-    
 }
